@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Formulário </title>
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+  </head>
+
+  <body>
+    <header>
+      <h1 id="titulo"> Cadastro </h1>
+      <p id="subtitulo"> Preencha seus dados </p>
+      <br> 
+    </header>
+
+    <div class="divi">
+      <form>
+        <fieldset class="parte1" style="width: 75%;">
+          <b> 
+          <legend class="tipo1"> Dados Pessoais </legend>
+          <br> 
+          Nome: <input type="text" name="nome" placeholder="Informe o seu nome" requised>
+          <br> <br>
+          CPF: <input type="text" name="cpf" placeholder="Informe o seu cpf" requised>
+          <br> <br>
+          RG: <input type="text" name="rg" placeholder="Informe o seu rg" requised>
+          Orgão Expeditor: <input type="text" name="Orgão expeditor" requised>
+          <br> <br>
+          Data de Nascimento: <input type="date" name="datanascimento" requised>
+          </b>
+        </fieldset>
+        <br>
+        <fieldset class="parte2" style="width: 75%;">  
+          <b> 
+          <legend class="tipo2"> Endereço </legend>
+          <br>
+          Endereço: <input type="text" name="endereco" placeholder="Informe o endereço" requised>
+          <br> <br>
+          Bairro: <input type="text" name="bairro" requised>
+          Número: <input type="text" name="numero" requised>
+          <br> <br>
+          Logradouro: <input type="text" name="logradouro" requised>
+          Complemento: <input type="text" name="complemento">
+          <br> <br>
+          Cidade: <input type="text" name="cidade" requised>
+          UF:
+          <select name="curso" requised>
+            <option selected disabled value=""> Selecionar </option>
+            <option value="ac"> AC </option>
+            <option value="al"> AL </option>
+            <option value="ap"> AP </option>
+            <option value="am"> AM </option>
+            <option value="ba"> BA </option>
+            <option value="ce"> CE </option>
+            <option value="df"> DF </option>
+            <option value="es"> ES </option>
+            <option value="go"> GO </option>
+            <option value="ma"> MA </option>
+            <option value="mt"> MT </option>
+            <option value="ms"> MS </option>
+            <option value="mg"> MG </option>
+            <option value="pa"> PA </option>
+            <option value="pb"> PB </option>
+            <option value="pr"> PR </option>
+            <option value="pe"> PE </option>
+            <option value="pi"> PI </option>
+            <option value="rj"> RJ </option>
+            <option value="rn"> RN </option>
+            <option value="rs"> RS </option>
+            <option value="ro"> RO </option>
+            <option value="rr"> RR </option>
+            <option value="sc"> SC </option>
+            <option value="sp"> SP </option>
+            <option value="se"> SE </option>
+            <option value="to"> TO </option>
+          </select>
+          </b>
+        </fieldset>
+        <br>
+        <fieldset class="parte3" style="width: 75%;">
+          <b>
+          <legend class="tipo3"> Contato </legend>
+          <br>
+          E-mail: <input type="email" name="email" placeholder="Informe o seu email" requised>
+          Confirme o seu e-mail: <input type="email" name="email" requised>
+          <br> <br>
+          Celular: <input type="text" name="celular" placeholder="Informe seu número" requised>
+          Telefone: <input type="text" name="telefone">
+          </b>
+        </fieldset>
+        <br>
+        <fieldset class="parte4" style="width: 75%;">
+          <b>
+          <legend class="tipo4"> Login </legend>
+          <br>
+          Usuário: <input type="text" name="usuario" placeholder="Escolha um usuário" requised>
+          <br> <br>
+          Senha: <input type="password" name="senha" placeholder="Escolha uma senha" requised>
+          Confirme a sua senha: <input type="password" name="confirmesenha" requised>
+          </b>
+        </fieldset>
+        <br>
+        <fieldset class="parte5" style="width: 75%;">
+          <b>
+          <legend class="tipo5"> Upload </legend>
+          <br>
+          <enctype="multipart/form-data"> Selecione um curriculo:
+            <input type="file" name="arquivo">
+          </b>
+        </fieldset>
+        <br> <br>
+        <button class="botao" type="submit"> Enviar dados </button> 
+
+      </form>
+    </div>
+
+    <footer>
+      <br> <br> <br>
+    </footer>
+  </body>
+</html>
